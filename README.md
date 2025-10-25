@@ -1,16 +1,60 @@
-# React + Vite
+# 📚 Library Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application for managing library books and online borrowing. Includes role-based access for **Users** and **Admins**, with data saved locally for demo purposes.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔹 User Features
+- Browse and search books by title, author, or category
+- View book details and availability
+- Borrow books for 14 days
+- Track active borrowings and return dates
+- Overdue alerts for late returns
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🔹 Admin Features
+- Add, edit, and delete books from the catalog
+- Track borrowed books and due dates
+- View library statistics and usage insights
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✅ Key Highlights
+- ✔️ Login system with admin/user roles
+- ✔️ Fully responsive design
+- ✔️ Pure CSS styling (no frameworks)
+- ✔️ `localStorage` for data persistence
+- ✔️ No backend required for demo
+
+---
+
+## 🔐 Demo Accounts
+| Role  | Email | Password |
+|-------|-------|----------|
+| User  | user@library.com | user123 |
+| Admin | admin@library.com | admin123 |
+
+---
+
+## ▶️ How to Run
+1. Download or clone the project
+2. Open `index.html` in your browser
+3. Login using a demo account and explore
+
+---
+
+## 🛠 Tech Stack
+- **HTML**
+- **CSS**
+- **JavaScript** (LocalStorage for data)
+
+---
+
+## 📸 Screenshots
+> <img width="1297" height="808" alt="image" src="https://github.com/user-attachments/assets/60425a4a-0e79-4afa-ba13-e82e176fef1c" />
+>
+
+---
+
+
