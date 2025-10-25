@@ -1,0 +1,154 @@
+.profile-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.profile-header {
+  background: linear-gradient(135deg, var(--primary-light) 0%, var(--white) 100%);
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.profile-header h1 {
+  font-size: 28px;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+.user-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.user-info p {
+  font-size: 14px;
+  color: var(--text-dark);
+}
+
+.user-info strong {
+  color: var(--primary);
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--border);
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: 12px 20px;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: var(--text-light);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.tab-btn.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+.tab-btn:hover {
+  color: var(--text-dark);
+}
+
+.tab-content {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.borrowings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.borrowing-item {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.borrowing-item.overdue {
+  border-left: 4px solid var(--danger);
+  background-color: #ffebee;
+}
+
+.borrowing-info h3 {
+  font-size: 16px;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.borrowing-info .author {
+  font-size: 14px;
+  color: var(--text-light);
+  margin-bottom: 12px;
+}
+
+.borrowing-info .dates {
+  display: flex;
+  gap: 20px;
+  font-size: 12px;
+  color: var(--text-light);
+}
+
+.borrowing-info .reserved-status {
+  font-size: 12px;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.overdue-text {
+  color: var(--danger) !important;
+  font-weight: 600;
+}
+
+.empty-message {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--text-light);
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .borrowing-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .borrowing-info .dates {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .tabs {
+    gap: 0;
+  }
+
+  .tab-btn {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+}

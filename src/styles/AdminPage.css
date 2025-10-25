@@ -1,0 +1,143 @@
+.admin-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.admin-header h1 {
+  font-size: 28px;
+  color: var(--text-dark);
+}
+
+.add-book-form {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.add-book-form h2 {
+  font-size: 20px;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+.add-book-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(4, 151, 105, 0.1);
+}
+
+.books-table {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.books-table h2 {
+  font-size: 20px;
+  color: var(--text-dark);
+  padding: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: var(--bg-light);
+}
+
+th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+td {
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+  color: var(--text-dark);
+}
+
+tbody tr:hover {
+  background-color: var(--bg-light);
+}
+
+.btn-danger {
+  background-color: var(--danger);
+  color: var(--white);
+}
+
+.btn-danger:hover {
+  background-color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  th,
+  td {
+    padding: 12px;
+  }
+}

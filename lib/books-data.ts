@@ -1,0 +1,147 @@
+export interface Book {
+  id: string
+  title: string
+  author: string
+  category: string
+  year: number
+  isbn: string
+  available: number
+  total: number
+  description: string
+  coverColor: string
+}
+
+export const BOOKS: Book[] = [
+  {
+    id: "1",
+    title: "The Great Gatsby",
+    author: "F. Scott Fitzgerald",
+    category: "Fiction",
+    year: 1925,
+    isbn: "978-0743273565",
+    available: 3,
+    total: 5,
+    description: "A classic American novel set in the Jazz Age.",
+    coverColor: "bg-blue-500",
+  },
+  {
+    id: "2",
+    title: "To Kill a Mockingbird",
+    author: "Harper Lee",
+    category: "Fiction",
+    year: 1960,
+    isbn: "978-0061120084",
+    available: 2,
+    total: 4,
+    description: "A gripping tale of racial injustice and childhood innocence.",
+    coverColor: "bg-amber-600",
+  },
+  {
+    id: "3",
+    title: "1984",
+    author: "George Orwell",
+    category: "Dystopian",
+    year: 1949,
+    isbn: "978-0451524935",
+    available: 1,
+    total: 3,
+    description: "A chilling vision of a totalitarian future.",
+    coverColor: "bg-red-700",
+  },
+  {
+    id: "4",
+    title: "Pride and Prejudice",
+    author: "Jane Austen",
+    category: "Romance",
+    year: 1813,
+    isbn: "978-0141439518",
+    available: 4,
+    total: 5,
+    description: "A witty romance of manners and social commentary.",
+    coverColor: "bg-pink-500",
+  },
+  {
+    id: "5",
+    title: "The Catcher in the Rye",
+    author: "J.D. Salinger",
+    category: "Fiction",
+    year: 1951,
+    isbn: "978-0316769174",
+    available: 2,
+    total: 3,
+    description: "A controversial coming-of-age novel.",
+    coverColor: "bg-green-600",
+  },
+  {
+    id: "6",
+    title: "Sapiens",
+    author: "Yuval Noah Harari",
+    category: "Non-Fiction",
+    year: 2011,
+    isbn: "978-0062316097",
+    available: 3,
+    total: 4,
+    description: "A brief history of humankind from the Stone Age to modern times.",
+    coverColor: "bg-orange-500",
+  },
+  {
+    id: "7",
+    title: "The Hobbit",
+    author: "J.R.R. Tolkien",
+    category: "Fantasy",
+    year: 1937,
+    isbn: "978-0547928227",
+    available: 2,
+    total: 3,
+    description: "An adventure fantasy about a hobbit's unexpected journey.",
+    coverColor: "bg-emerald-600",
+  },
+  {
+    id: "8",
+    title: "Dune",
+    author: "Frank Herbert",
+    category: "Science Fiction",
+    year: 1965,
+    isbn: "978-0441172719",
+    available: 1,
+    total: 2,
+    description: "An epic science fiction novel set on a desert planet.",
+    coverColor: "bg-yellow-700",
+  },
+  {
+    id: "9",
+    title: "The Silent Patient",
+    author: "Alex Michaelides",
+    category: "Thriller",
+    year: 2019,
+    isbn: "978-1250295522",
+    available: 3,
+    total: 4,
+    description: "A psychological thriller with a shocking twist.",
+    coverColor: "bg-slate-700",
+  },
+  {
+    id: "10",
+    title: "Educated",
+    author: "Tara Westover",
+    category: "Memoir",
+    year: 2018,
+    isbn: "978-0399590504",
+    available: 2,
+    total: 3,
+    description: "A memoir about a woman who leaves her survivalist family to pursue education.",
+    coverColor: "bg-purple-600",
+  },
+]
+
+export const CATEGORIES = [
+  "All",
+  "Fiction",
+  "Non-Fiction",
+  "Fantasy",
+  "Science Fiction",
+  "Romance",
+  "Thriller",
+  "Dystopian",
+  "Memoir",
+]
